@@ -1,0 +1,23 @@
+<ul>
+    {{#each productos}}
+            <li>{{this.nombre}}</li>
+    {{/each}}
+</ul>
+<h2>Listado de productos</h2>
+
+<div class="d-grid gap-2">
+    <a href="/api/productos/Graga.jpg" class="btn btn-primary" type="button">Nuevo producto</a>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    {{#each productos}}
+        <div class="col">
+            <div class="card h-100">
+            <img src="/img/productos/{{this.imagen}}"class="card-img-top" alt="{{this.imagen}}">
+            <div class="card-body text-center">
+                 <h5 class="card-title">{{this.precio}}</h5>
+                 <p class="card-text">{{this.nombre}}</p>
+              </div>
+            </div>
+        </div>
+      {{/each}}
+    </div>
