@@ -1,19 +1,17 @@
-<h2 id="nuevoProducto">Registro de nuevo producto</h2>
-<form method="post" id="formRegistrarProducto">
-  <div class="input-group mb-3">
-  <input type="text" name="nombre" class="form-control" placeholder="nombre producto" aria-label="Username">
-  <span class="input-group-text">@</span>
-  <input type="number" name="precio "class="form-control" placeholder="precio producto" aria-label="Server">
-  <input type="number" name="cantidad" class="form-control" placeholder="cantidad de producto" aria-label="Username">
-  <span class="input-group-text">@</span>
-  <input type="text" class="imagen " placeholder="form control" aria-label="imagen del producto">
-</div>
-<span class="input-group-text">@</span>
-    <input type="text" name="imagen" class="form-control" placeholder="Imagen del producto" aria-label="Server">
+<h2 id="nuevoProducto">Nuevo producto</h2>
+<form id="formRegistrarProducto" enctype="multipart/form-data">
+    <div class="input-group mb-3">
+      <input type="text" name="nombre" class="form-control" placeholder="Nombre" aria-label="Username">
+      <span class="input-group-text">@</span>
+      <input type="number" name="precio" class="form-control" placeholder="Precio" aria-label="Server">
     </div>
-    <div class="d-grid gap-2">
-        <button type="submit" class="btn btn-success">Registrar</button>
+    <div class="input-group mb-3">
+      <input type="number" name="cantidad" class="form-control" placeholder="Cantidad" aria-label="Username">
+      <span class="input-group-text">@</span>
+      <input type="text" name="imagen" class="form-control" placeholder="Imagen" aria-label="Server">
     </div>
-    
+    <div class="d-grid gap-2 col-12 mx-auto">
+      <button class="btn btn-primary" type="submit">Registrar</button>
+    </div>
 </form>
-<script> src="/js/productos/registrarProducto.js"</script>
+<script src="/js/registrarProducto.js"></script>

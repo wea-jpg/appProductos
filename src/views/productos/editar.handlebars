@@ -1,0 +1,20 @@
+<h2 id="actualizarProducto">Actualizar producto</h2>
+<form enctype="multipart/form-data" id="formEditarProducto">
+  <div class="input-group mb-3">
+    <input type="text" name="nombre" value="{{producto.nombre}}" class="form-control" placeholder="Nombre" aria-label="Nombre">
+    <span class="input-group-text">@</span>
+    <input type="number" name="precio" value="{{producto.precio}}" class="form-control" placeholder="Precio" aria-label="Precio">
+    <span class="input-group-text">@</span>
+    <input type="hidden" name="producto_id" value="{{producto.producto_id}}">
+  </div>
+  <div class="input-group mb-3">
+    <input type="number" name="cantidad" value="{{producto.cantidad}}" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+    <span class="input-group-text">@</span>
+    <input type="text" name="imagen" value="{{producto.imagen}}" class="form-control" placeholder="Imagen" aria-label="Imagen">
+    <span class="input-group-text">@</span>
+  </div>
+  <div class="d-grid gap-2">
+    <button class="btn btn-primary" type="submit">Button</button>
+  </div>
+</form>
+<script src="/js/editarProducto.js"></script>
